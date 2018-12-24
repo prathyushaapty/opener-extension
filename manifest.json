@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Opener Extension",
+    "version": "2.5.1842",
+    "description": "",
+    "permissions": [
+        "<all_urls>",
+        "browsingData",
+        "cookies",
+        "storage",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "identity"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    "web_accessible_resources": ["*"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "exclude_globs": ["*.pdf*"],
+        "js": ["opener.js"],
+        "css": ["styles.css"],
+        "run_at": "document_idle"
+    }]
+}

@@ -1,0 +1,12 @@
+#letznav-opener-id {
+    position: absolute;
+    left: 5%;
+    bottom: 12%;
+    background: red;
+    color: white;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    height: 50px;
+    border-radius: 2px;
+}
